@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jxmapviewer</groupId>
 	<artifactId>jxmapviewer-animation-example</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>jxmapviewer animation example</name>
 	<description>jxmapviewer animation example using VividSwingAnimations</description>
 

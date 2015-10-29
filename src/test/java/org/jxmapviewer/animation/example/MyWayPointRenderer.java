@@ -18,6 +18,9 @@ import org.jxmapviewer.viewer.WaypointRenderer;
 
 import sample4_fancy.MultiplyComposite;
 
+/**
+ * Renderer for {@link MyWaypoint}, display myWaypoint on screen
+ */
 public class MyWayPointRenderer implements WaypointRenderer<MyWaypoint> {
     private static final Log log = LogFactory.getLog(MyWayPointRenderer.class);
 

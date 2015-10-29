@@ -1,16 +1,20 @@
-package org.jxmapviewer.animation.example;
+package org.jxmapviewer.animation.example.simple;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 import javax.swing.JFrame;
 
+import org.jxmapviewer.animation.example.RefreshFrameAdapter;
 import org.jxmapviewer.viewer.GeoPosition;
 
 import de.anormalmedia.vividswinganimations.api.Moveable;
 import de.anormalmedia.vividswinganimations.bounds.LocationAnimation;
 import de.anormalmedia.vividswinganimations.runner.SequentialAnimationRunner;
 
+/**
+ * Start animation for {@link Moveable} element to destination
+ */
 public class StartAnimationAdapter extends MouseAdapter {
 
     private Moveable element;
