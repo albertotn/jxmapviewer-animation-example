@@ -1,6 +1,6 @@
 # Jxmapveiwer animation example
 
-An example of jxmapviewer animation example
+An example of jxmapviewer animation using VividSwingAnimations
 
 ## Description
 
