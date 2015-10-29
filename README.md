@@ -4,7 +4,7 @@ An example of jxmapviewer animation using VividSwingAnimations
 
 ## Description
 
-![Jxmapveiwer animation example](img/img01.png)
+![Jxmapveiwer animation example](img/img02.gif)
 
 This example use [JxMapviewer](https://github.com/albertotn/jxmapviewer2) to display a marker on map an then move it using 
 [VividSwingAnimations](https://github.com/albertotn/VividSwingAnimations)
