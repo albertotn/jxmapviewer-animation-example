@@ -16,6 +16,21 @@ Install maven, clone both [JxMapviewer](https://github.com/albertotn/jxmapviewer
 
 maven clean install
 
+
+## Examples
+
+### Simple Animation
+
+Please see org.jxmapviewer.animation.example.simple for code
+
+In this example on user click marker is animated from starting position to target position
+
+### Path Animation
+
+Please see org.jxmapviewer.animation.example.path for code
+
+This example shows how create a set of positions that in order marker will follow, after a small pause
+
 ## License
 
 Apache License 2.0, see LICENSE file
