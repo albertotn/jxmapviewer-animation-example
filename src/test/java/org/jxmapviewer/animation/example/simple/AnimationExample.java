@@ -1,6 +1,7 @@
 package org.jxmapviewer.animation.example.simple;
 
 import java.awt.Color;
+import java.awt.Window.Type;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
@@ -30,7 +31,9 @@ public class AnimationExample implements Runnable {
     public AnimationExample() {
 	// Build Swing window
 	frame = new JFrame("JXMapviewer animation example");
-	frame.setSize(800, 800);
+	frame.setResizable(false);
+	frame.setType(Type.UTILITY);
+	frame.setSize(790, 640);
 	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 	JPanel mainPanel = new JPanel();
@@ -60,7 +63,7 @@ public class AnimationExample implements Runnable {
 
 	// Build button and add mouse listener
 	JButton button = new JButton("Animate");
-	button.setBounds(50, 600, 100, 100);
+	button.setBounds(671, 566, 101, 32);
 	button.addMouseListener(new StartAnimationAdapter(frame,
 		wayPointToMove, mainz));
 	mainPanel.add(button);

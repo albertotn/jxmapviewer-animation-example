@@ -1,6 +1,7 @@
 package org.jxmapviewer.animation.example.path;
 
 import java.awt.Color;
+import java.awt.Window.Type;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -23,15 +24,21 @@ import org.jxmapviewer.viewer.GeoPosition;
  * VividSwingAnimations
  */
 public class PathAnimationExample implements Runnable {
-    private static JFrame frame;
+    private static JFrame frmJxmapviewerPathAnimation;
 
     private MyWaypoint wayPointToMove;
 
     public PathAnimationExample() {
 	// Build Swing window
-	frame = new JFrame("JXMapviewer animation example");
-	frame.setSize(800, 800);
-	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	frmJxmapviewerPathAnimation = new JFrame(
+		"JXMapviewer animation example");
+	frmJxmapviewerPathAnimation
+		.setTitle("JXMapviewer Path Animation example");
+	frmJxmapviewerPathAnimation.setResizable(false);
+	frmJxmapviewerPathAnimation.setType(Type.UTILITY);
+	frmJxmapviewerPathAnimation.setSize(789, 634);
+	frmJxmapviewerPathAnimation
+		.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 	JPanel mainPanel = new JPanel();
 	mainPanel.setSize(800, 600);
@@ -39,7 +46,7 @@ public class PathAnimationExample implements Runnable {
 
 	JScrollPane scrollPanel = new JScrollPane(mainPanel);
 	scrollPanel.setSize(800, 800);
-	frame.getContentPane().add(scrollPanel);
+	frmJxmapviewerPathAnimation.getContentPane().add(scrollPanel);
 
 	// Build map
 	List<GeoPosition> path = new ArrayList<GeoPosition>();
@@ -65,16 +72,16 @@ public class PathAnimationExample implements Runnable {
 
 	// Build button and add mouse listener
 	JButton button = new JButton("Animate");
-	button.setBounds(50, 600, 100, 100);
-	button.addMouseListener(new StartPathAnimationAdapter(frame,
-		wayPointToMove, path));
+	button.setBounds(671, 564, 100, 28);
+	button.addMouseListener(new StartPathAnimationAdapter(
+		frmJxmapviewerPathAnimation, wayPointToMove, path));
 	mainPanel.add(button);
     }
 
     @Override
     public void run() {
 	// display frame
-	frame.setVisible(true);
+	frmJxmapviewerPathAnimation.setVisible(true);
     }
 
     /**
